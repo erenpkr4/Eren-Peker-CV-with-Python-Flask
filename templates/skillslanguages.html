@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/skillslanguages.css') }}">
+{% endblock styles %}
+
+{% block title %}Skills and Languages{% endblock title %}
+
+{% block content %}
+<div class="skills-header">
+    <div class="animated-skills">
+        <div>
+            <ul>
+                <li><h6>Python/Flask</h6></li>
+                <li><h6>HTML/CSS</h6></li>
+                <li><h6>SQL</h6></li>
+                <li><h6>Java</h6></li>
+                <li><h6>C++/Arduino</h6></li>
+            </ul>
+        </div>
+        <div class="dots-div">
+            <ul style="list-style: none;">
+                <li>
+                    <div>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotwhite"></span>
+                    </div>
+                    <h6> </h6>
+                </li>
+                <li>
+                    <div>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotwhite"></span>
+                        <span class="dotwhite"></span>
+                    </div>
+                    <h6> </h6>
+                </li>
+                <li>
+                    <div>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotwhite"></span>
+                        <span class="dotwhite"></span>
+                    </div>
+                    <h6> </h6>
+                </li>
+                <li>
+                    <div>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotwhite"></span>
+                        <span class="dotwhite"></span>
+                        <span class="dotwhite"></span>
+                    </div>
+                    <h6> </h6>
+                </li>
+                <li>
+                    <div>
+                        <span class="dotblack"></span>
+                        <span class="dotblack"></span>
+                        <span class="dotwhite"></span>
+                        <span class="dotwhite"></span>
+                        <span class="dotwhite"></span>
+                    </div>
+                    <h6> </h6>
+                </li>
+            </ul>
+            
+    
+        </div>
+        <hr> 
+        
+        <ul>
+            <li><h6>Turkish (Native)</h6></li>
+            <li><h6>English (Advanced)</h6></li>
+            <li><h6>German (Beginner)</h6></li>
+        </ul>
+
+    </div>
+</div>
+{% endblock content %}

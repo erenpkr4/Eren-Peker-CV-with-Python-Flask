@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+        <title>{% block title %}{% endblock %}</title>
+        {% block head %}
+
+        {%- block styles %}
+        
+        {%- endblock styles %}
+
+        {% endblock head %}
+    </head>
+    <body>
+        {% block body %}
+        {% block navbar %}
+        <div class="navigation-bar">
+            <div id="navigation-container">
+                <img src="{{ url_for('static', filename='logo.png') }}" style="width:90px;height:90px;"> 
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/experience">Experience</a></li>
+                    <li><a href="/education">Education</a></li>
+                    <li><a href="/skillslanguages">Skills/Languages</a></li>
+                    <li><a href="/certification">Certification</a></li>
+                </ul>
+            </div>
+        </div>
+        {% endblock navbar %}
+
+        <div class="content">
+            {% block content %}
+            {% endblock content %}
+        </div>
+        
+        {% endblock body %}
+    </body>
+</html>

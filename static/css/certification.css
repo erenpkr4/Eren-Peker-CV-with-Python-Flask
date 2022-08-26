@@ -1,0 +1,25 @@
+@keyframes fadeIn{
+    0%,45% {
+      opacity: 0;
+  }
+    100%{
+      opacity: 1;
+  }
+  }
+
+.certification-header {
+    position: absolute;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 25px;
+    color: rgb(49, 49, 56);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.animated-certification {
+    animation: fadeIn;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}

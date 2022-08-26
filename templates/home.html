@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+{% endblock styles %}
+
+{% block title %}Homepage{% endblock title %}
+
+{% block content %}
+<div class="homepage-header">
+    {% if name %}
+    <h1 class="nametag">Nice to meet you, {{ name }}.</h1>
+    <h1 class="nametag">Here are my contact details.</h1>
+    <div class="nametag">
+        <h6>Email: erenpkr4@gmail.com</h6>
+        <h6>LinkedIn: https://www.linkedin.com/in/erenpkr4/</h6>
+        <h6>Github: https://github.com/erenpkr4</h6>
+        <h6>Phone: ***</h6>
+        <h6>Address: ***
+            </h6>
+    </div>
+    {% endif %}
+
+    {% if not name %}
+    <h1 class="nametag">Welcome to my CV.</h1>
+    <h1 class="nametag">What is your name?</h1>
+    <form method="POST">
+        <div class="animated-form">
+            {{ name_form.hidden_tag() }}
+            {{ name_form.name(class_="txtfield") }}
+            <br>
+            {{ name_form.submit(class_="button") }}
+        </div>
+        
+    </form>
+    {% endif %}
+    
+</div>  
+{% endblock content %}

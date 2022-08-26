@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/education.css') }}">
+{% endblock styles %}
+
+{% block title %}Education{% endblock title %}
+
+{% block content %}
+<div class="education-header">
+    <div class="animated-education">
+        <h1>Computer Engineering</h1>
+        <h3>at Bahçeşehir University</h3>
+        <div class="education-date">
+            <h3>2019-Present</h3>
+        </div>
+        <br><br>
+        <hr>
+    </div>
+
+    <div class="animated-education">
+        <br><br>
+        <h1>High School Diploma</h1>
+        <h3>at Beşiktaş Atatürk Anatolian High School</h3>
+        <div class="education-date">
+            <h3>2015-2019</h3>
+        </div>
+    </div>
+    
+</div>
+{% endblock content %}

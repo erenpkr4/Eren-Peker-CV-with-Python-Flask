@@ -1,0 +1,40 @@
+@keyframes fadeIn{
+    0%,45% {
+      opacity: 0;
+  }
+    100%{
+      opacity: 1;
+  }
+  }
+
+.education-header {
+    position: absolute;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 25px;
+    color: rgb(49, 49, 56);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.animated-education:nth-child(1) {
+    animation: fadeIn;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+    
+.animated-education:nth-child(2) {
+    animation: fadeIn;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+
+.education-date {
+    position: absolute;
+    text-align: left;
+    margin-top: -150px;
+    margin-left: 600px;
+}

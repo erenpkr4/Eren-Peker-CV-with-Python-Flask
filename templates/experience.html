@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/experience.css') }}">
+{% endblock styles %}
+
+{% block title %}Experience{% endblock title %}
+
+{% block content %}
+<div class="experience-header">
+    <div class="animated-experience">
+        <h1>Web Development Intern</h1>
+        <h3 style="margin-left:280px;">at Bilge Teknoloji</h3>
+        <div class="experience-date">
+            <h3>13.07.2022-26.08.2022</h3>
+        </div>
+    </div>
+
+    <div class="animated-experience">
+        <ul>
+            <li><p>Completed Web Development tasks.</p></li>
+            <li><p>Created desktop and web applications with Python.</p></li>
+            <li><p>Designed simple pages with HTML and CSS.</p></li>
+            <li><p>Created various functional websites with Flask Web Framework.</p></li>
+        </ul>
+    </div>
+    
+</div>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/certification.css')}}">
+{% endblock styles %}
+
+{% block title %}Certification{% endblock title %}
+
+{% block content %}
+<div class="certification-header">
+    <div class="animated-certification">
+        <ul>
+            <li><h6>The Bronze Standard of The Duke Of Edinburgh's International Award</h6></li>
+            <li><h6>Yıldız Technical University High School BEST Engineering Contest Elimination
+                Stage First Place Certificate</h6></li>
+            <li><h6>Yıldız Technical University High School BEST Engineering Contest Final Stage
+                Participation Certificate</h6></li>
+        </ul>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock styles %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+<div class="about-header">
+    <h1 class="animated-about">Eren Peker.</h1>
+    <div class="animated-about">
+        <div class="cv-photo">
+            <img src="{{ url_for('static', filename='cv-photo.png') }}" style="height:300px;width:300px;">
+        </div>
+        <h2 class="animated-about">Computer Engineering Student at BAU</h2>
+        <br><br><br>
+        <hr class="animated-about">
+        <h5 class="animated-about">Disciplined and hard working Computer Engineering student who claims the team leader
+            role with confidence in almost every software development project throughout his license
+            program. Coherent with peers and has well-developed communication skills. Eager to gain
+            work experience and acquire new skills.
+        </h5>
+    </div>
+    
+</div>
+{% endblock content %}
